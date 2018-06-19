@@ -1,0 +1,14 @@
+{
+  "name": "flexbox-project",
+  "version": "1.0.0",
+  "description": "A project to experiment with Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Russell Longstaff",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0" 
+  }
+}
