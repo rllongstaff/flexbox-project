@@ -11,5 +11,12 @@ html {
 }
 
 body {
-   
+    background: url('../img/flexbox-background.png') $color-secondary-light-2; 
+    box-sizing: border-box;
+    margin: 3.2rem 0; 
+}
+
+.section {
+    margin: 3rem 0;
+    padding: 2rem 4rem;  
 }

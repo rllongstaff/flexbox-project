@@ -1,20 +1,170 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Flexbox Project</title>
+        <title>Flexbox Playground</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">  
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Flexbox Project</h1>
+        <header class="header">
+            <h1 class="header__title">Flexbox Playground</h1>
         </header>
-        <div class="container">
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-        </div>
-        <footer>
-            <p>A Flexbox Project</p>
+        <section class="section section-flexbox-justify-content">
+            <h2 class="section__heading">Justify Content</h2>
+            <p class="section__text">Using the property <strong>justify-content</strong> you can arrange items on the horizontal axis.</p>
+            <span class="section__span">justify-content: flex-start; (default)</span>
+            <div class="flexbox-container justify-content-flex-start">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>            
+            <span class="section__span">justify-content: flex-end;</span>
+            <div class="flexbox-container justify-content-flex-end">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>            
+            <span class="section__span">justify-content: center;</span>
+            <div class="flexbox-container justify-content-center">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>
+            <span class="section__span">justify-content: space-between;</span>            
+            <div class="flexbox-container justify-content-space-between">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>
+            <span class="section__span">justify-content: space-around;</span>            
+            <div class="flexbox-container justify-content-space-around">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>
+            <span class="section__span">justify-content: space-evenly;</span>               
+            <div class="flexbox-container justify-content-space-evenly">
+                <div class="item flexbox-container__item-1">Item 1</div>
+                <div class="item flexbox-container__item-2">Item 2</div>
+                <div class="item flexbox-container__item-3">Item 3</div>
+            </div>                         
+        </section>
+        <section class="section section-flexbox-align-items">
+            <h2 class="section__heading">Align Items</h2>
+            <p class="section__text">Using the property <strong>align-items</strong> you can arrange items on the vertical axis.</p>
+            <span class="section__span">align-items: flex-start; (default)</span>
+            <div class="flexbox-container align-items-container align-items-flex-start">
+                <div class="item align-items-container__item-1 flexbox-container__item-1">Item 1</div>
+                <div class="item align-items-container__item-2 flexbox-container__item-2">Item 2</div>
+                <div class="item align-items-container__item-3 flexbox-container__item-3">Item 3</div>
+            </div>            
+            <span class="section__span">align-items: flex-end;</span>
+            <div class="flexbox-container align-items-container align-items-flex-end">
+                <div class="item align-items-container__item-1 flexbox-container__item-1">Item 1</div>
+                <div class="item align-items-container__item-2 flexbox-container__item-2">Item 2</div>
+                <div class="item align-items-container__item-3 flexbox-container__item-3">Item 3</div>
+            </div>            
+            <span class="section__span">align-items: center;</span>
+            <div class="flexbox-container align-items-container align-items-center">
+                <div class="item align-items-container__item-1 flexbox-container__item-1">Item 1</div>
+                <div class="item align-items-container__item-2 flexbox-container__item-2">Item 2</div>
+                <div class="item align-items-container__item-3 flexbox-container__item-3">Item 3</div>
+            </div>
+            <span class="section__span">align-items: stretch;</span>            
+            <div class="flexbox-container align-items-container align-items-stretch">
+                <div class="item align-items-container__item-1 flexbox-container__item-1">Item 1</div>
+                <div class="item align-items-container__item-2 flexbox-container__item-2">Item 2</div>
+                <div class="item align-items-container__item-3 flexbox-container__item-3">Item 3</div>
+            </div>
+            <span class="section__span">align-items: baseline;</span>            
+            <div class="flexbox-container align-items-container align-items-baseline">
+                <div class="item align-items-container__item-1 flexbox-container__item-1">Item 1</div>
+                <div class="item align-items-container__item-2 flexbox-container__item-2">Item 2</div>
+                <div class="item align-items-container__item-3 flexbox-container__item-3">Item 3</div>
+            </div>                         
+        </section> 
+        <section class="section section-flexbox-align-content">
+            <h2 class="section__heading">Align Content</h2>
+            <p class="section__text">Using the property <strong>align-content</strong> you can arrange all flexbox items on the vertical axis. 
+            <span class="section__note"><em><strong>Note</strong> each flex container in this section also has <strong>flex-wrap: wrap;</strong> a property to ensure the items wrap on to new lines in the flexbox container. <br>Otherwise by default items in the container would not wrap.</span></em></p>
+            <span class="section__span">align-content: flex-start; (default)</span>
+            <div class="flexbox-container align-content-container align-content-flex-start">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                                
+            </div>            
+            <span class="section__span">align-content: flex-end;</span>
+            <div class="flexbox-container align-content-container align-content-flex-end">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                                
+            </div>             
+            <span class="section__span">align-content: center;</span>
+            <div class="flexbox-container align-content-container align-content-center">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                                
+            </div>
+            <span class="section__span">align-content: space-between;</span>            
+            <div class="flexbox-container align-content-container align-content-space-between">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div> 
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                               
+            </div> 
+            <span class="section__span">align-content: space-around;</span>            
+            <div class="flexbox-container align-content-container align-content-space-around">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                                
+            </div>                         
+            <span class="section__span">align-content: stretch;</span>            
+            <div class="flexbox-container align-content-container align-content-stretch">
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>
+                <div class="item align-content-container__item flexbox-container__item-1">Item 1</div>
+                <div class="item align-content-container__item flexbox-container__item-2">Item 2</div>
+                <div class="item align-content-container__item flexbox-container__item-3">Item 3</div>                                
+            </div>                        
+        </section>                  
+        <footer class="footer">
+            <p class="footer__copy">&copy;2018 A Flexbox Project by Russell Longstaff</p>
         </footer>
     </body>
 </html>

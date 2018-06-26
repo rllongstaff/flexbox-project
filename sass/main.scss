@@ -2,6 +2,8 @@
 @import 'abstracts/variables';
 
 @import 'base/base';
+@import 'base/typography';
 
-@import 'layout/header';
+@import 'layout/flexbox'; 
+@import 'layout/header';  
 @import 'layout/footer';
