@@ -28,12 +28,12 @@ body {
   margin: 3.2rem 0; }
 
 .section {
-  margin: 3rem 0;
-  padding: 2rem 4rem; }
+  margin: 2rem 0;
+  padding: 1rem 4rem; }
   @media only screen and (max-width: 56.25em) {
     .section {
-      margin: 2rem 0;
-      padding: 1.5rem 4rem; } }
+      margin: 1rem 0;
+      padding: .5rem 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .section {
       margin: 1rem 0;

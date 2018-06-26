@@ -17,12 +17,12 @@ body {
 }
 
 .section {
-    margin: 3rem 0;
-    padding: 2rem 4rem;  
+    margin: 2rem 0;
+    padding: 1rem 4rem;  
 
     @include respond(tablet-portrait) {
-        margin: 2rem 0;
-        padding: 1.5rem 4rem;
+        margin: 1rem 0;
+        padding: .5rem 4rem;
     } 
 
     @include respond(phone) {
