@@ -31,9 +31,28 @@
     flex-wrap: wrap;
     height: 40rem;
 
+    @include respond(tablet-portrait) {
+        height: 32rem;
+    }
+
+    @include respond(phone) {
+        height: 25rem;
+    }
+
     &__item {
         height: 10rem;
         width: 26rem;
+
+        @include respond(tablet-portrait) {
+            height: 7rem;
+            width: 14rem;
+        }
+
+        @include respond(phone) {
+            height: 5rem;
+            width: 10rem;
+        }
+
     }
 }
 
