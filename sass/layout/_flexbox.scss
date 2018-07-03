@@ -36,21 +36,21 @@
     }
 
     @include respond(phone) {
-        height: 25rem;
+        height: 27rem;
     }
 
     &__item {
-        height: 10rem;
+        height: 10rem; 
         width: 26rem;
 
         @include respond(tablet-portrait) {
-            height: 7rem;
+            height: 7rem;  
             width: 14rem;
         }
 
         @include respond(phone) {
-            height: 7rem;
-            width: 10rem;
+            height: 6rem;
+            width: 10rem;  
         }
 
     }

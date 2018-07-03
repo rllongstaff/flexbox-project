@@ -110,7 +110,7 @@ body {
       height: 32rem; } }
   @media only screen and (max-width: 37.5em) {
     .align-content-container {
-      height: 25rem; } }
+      height: 27rem; } }
   .align-content-container__item {
     height: 10rem;
     width: 26rem; }
@@ -120,7 +120,7 @@ body {
         width: 14rem; } }
     @media only screen and (max-width: 37.5em) {
       .align-content-container__item {
-        height: 7rem;
+        height: 6rem;
         width: 10rem; } }
 
 .justify-content-flex-start {
